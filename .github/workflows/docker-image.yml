@@ -30,10 +30,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-buildx-
 
-- name: Build Docker image
-  run: |
-    docker build -t ${{ secrets.DOCKER_USERNAME }}/your-app-name:latest ./frontend
+      - name: Build Docker image
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/frontend:latest ./frontend
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/your-app-name:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/frontend:latest
