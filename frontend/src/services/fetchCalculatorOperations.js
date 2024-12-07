@@ -11,7 +11,6 @@ const fetchOperation = async (expression) => {
         headers: { "Content-Type": "application/json" },
       }
     );
-
     const data = response.data;
     if (!data.result) {
       return "No Data Recieved";
