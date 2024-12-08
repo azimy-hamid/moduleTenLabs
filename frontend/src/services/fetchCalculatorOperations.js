@@ -15,7 +15,6 @@ const fetchOperation = async (expression) => {
     if (!data.result) {
       return "No Data Recieved";
     }
-
     return data.result;
   } catch (error) {
     console.error("Error fetching result:", error);
