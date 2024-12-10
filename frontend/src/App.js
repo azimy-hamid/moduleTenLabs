@@ -12,7 +12,6 @@ const calculatorButtons = [
   ["1", "2", "3", "+"], // Third row
   ["0", ".", "="], // Fourth row
 ];
-
 function App() {
   return (
     <CalculatorProvider className="App">
